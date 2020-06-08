@@ -1,0 +1,29 @@
+body{
+    /*background-color: blue;
+*/
+}
+div{
+    background-color: lightblue;
+    
+    width: 80%;
+    margin: auto;
+    
+}
+input{
+    box-sizing: border-box;
+    width: 90%;
+    height: 40px;
+    font-size: larger;
+    padding-left: 10px;
+    display: inline-block;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 10px;
+    
+}
+button{
+    width: 10%;
+    height: 40px;
+    margin-left: 5%;
+}
