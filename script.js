@@ -1,6 +1,6 @@
 document.write("hey");
 var a =document.getElementById("area");
-function one()
+function press(i)
 {
-    a.defaultValue+="1";
+    a.defaultValue+=i;
 }
