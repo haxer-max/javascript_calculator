@@ -2,23 +2,23 @@ var a =document.getElementById("area");
 function press(i)
 {
     console.log(i)
-    a.defaultValue+=i;
+    a.value+=i;
 }
 function Clear()
 {
-    a.defaultValue="";
+    a.value="";
 }
 function Eval()
 {
-    let p =a.defaultValue;
+    let p =a.value;
     while(p.includes("^"))
     {
         p=p.replace('^',"**");
     }
     console.log(p);
-    a.defaultValue=eval(p);
+    a.value=eval(p);
 }
 function back()
 {
-    a.defaultValue=a.defaultValue.substring(0,a.defaultValue.length-1);
+    a.value=a.value.substring(0,a.value.length-1);
 }
