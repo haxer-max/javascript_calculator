@@ -10,7 +10,6 @@ div.main{
     
 }
 div.main>div{
-    //background-color: yellow;
     display: inline-block;
     width:90%;
     margin: auto;
@@ -46,7 +45,6 @@ button{
     background-color: inherit;
     color: white;
     border: none;
-    //font-weight: bold;
     font-size: 120%;
     border-radius: 9px;
     width: 15%;
