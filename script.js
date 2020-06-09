@@ -1,6 +1,7 @@
 var a =document.getElementById("area");
 function press(i)
 {
+    console.log(i)
     a.defaultValue+=i;
 }
 function Clear()
@@ -9,7 +10,13 @@ function Clear()
 }
 function Eval()
 {
-    a.defaultValue=eval(a.defaultValue.replace("pow","Math.pow"));
+    let p =a.defaultValue;
+    while(p.includes("^"))
+    {
+        p=p.replace('^',"**");
+    }
+    console.log(p);
+    a.defaultValue=eval(p);
 }
 function back()
 {
