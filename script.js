@@ -11,12 +11,13 @@ function Clear()
 function Eval()
 {
     let p =a.value;
+    const maxLen = p.split(/[^\d.]/).map(el => el.slice(el.indexOf(".")+1).length).sort((a, b) => a - b)[0]
     while(p.includes("^"))
     {
         p=p.replace('^',"**");
     }
     console.log(p);
-    a.value=eval(p);
+    a.value=(Math.round(eval(p) * 10 ** maxLen)) / (10 ** maxLen);
 }
 function back()
 {
