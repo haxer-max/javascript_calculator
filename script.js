@@ -11,7 +11,8 @@ function Clear()
 
 //THIS FUNCTION WILL HELP IN REMOVING THE ISSUE WITH FLOATING POINT NUMBERS
 function strip(number) {
-    return (parseFloat(number).toPrecision(12));
+    var no = parseFloat(number).toPrecision(12)
+    return (no * 1).toString();
 }
 
 function Eval()
