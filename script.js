@@ -8,6 +8,13 @@ function Clear()
 {
     a.value="";
 }
+
+//THIS FUNCTION WILL HELP IN REMOVING THE ISSUE WITH FLOATING POINT NUMBERS
+function strip(number) {
+    var no = parseFloat(number).toPrecision(12)
+    return (no * 1).toString();
+}
+
 function Eval()
 {
     let p =a.value;
@@ -16,7 +23,8 @@ function Eval()
         p=p.replace('^',"**");
     }
     console.log(p);
-    a.value=eval(p);
+    let temp = eval(p);
+    a.value=strip(temp);
 }
 function back()
 {
